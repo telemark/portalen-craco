@@ -1,9 +1,14 @@
 {
   "version": 2,
   "name": "portalen-craco",
+  "scope": "kommunikasjon",
   "builds": [
-    {"src": "/api/**/!(lib)/*.js", "use": "@now/node"},
-    {"src": "package.json", "use": "@now/static-build", "config": {"distDir": "build"}}
+    { "src": "/api/**/!(lib)/*.js", "use": "@now/node" },
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "build" }
+    }
   ],
   "routes": [
     {
