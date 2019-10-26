@@ -128,7 +128,7 @@ const Search = ({
               key={title}
               className={active ? classes.fasetActive : classes.faset}
               variant="contained"
-              color={active ? 'primary' : null}
+              color={active ? 'primary' : 'null'}
               component={Link}
               to={{
                 pathname: `${location.pathname}`,
