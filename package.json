@@ -54,7 +54,8 @@
     "lint": "eslint --no-eslintrc -c .eslintrc src api",
     "test": "react-scripts test",
     "format": "prettier --write \"src/**/*.js\" \"api/**/*.js\" \"config-overrides.js\"",
-    "precommit": "pretty-quick --staged"
+    "precommit": "pretty-quick --staged",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm i"
   },
   "browserslist": [
     ">0.2%",
