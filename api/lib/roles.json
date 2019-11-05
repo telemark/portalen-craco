@@ -678,5 +678,14 @@
       "alle",
       "vigoiks"
     ]
+  },
+  {
+    "id": "fyresdaltannklinikk",
+    "name": "Fyresdal tannklinikk",
+    "groups": [
+      "alle",
+      "fyresdaltannklinkk",
+      "tannhelse"
+    ]
   }
 ]
