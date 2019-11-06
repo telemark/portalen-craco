@@ -8,7 +8,8 @@ async function connectToDatabase(uri) {
     return cachedDb
   }
   const db = await mongoose.connect(process.env.DATABASE_URI, {
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true
   })
   cachedDb = db
   return db
