@@ -21,7 +21,7 @@
     "core-js": "3.3.6",
     "core.js": "0.4.2",
     "date-fns": "2.6.0",
-    "dayjs": "1.8.16",
+    "dayjs": "1.8.17",
     "isomorphic-unfetch": "3.0.0",
     "object.omit": "3.0.0",
     "prop-types": "15.7.2",
