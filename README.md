@@ -27,6 +27,12 @@ Merk at `now dev` ennå ikke fungerer så gått i forhold til å redigere fronte
 
 Kjør `npm i` også i /api mappen
 
+Legg inn denne i `.env`
+
+```
+REACT_APP_LIVEURL=http://localhost:3000
+```
+
 Start dev-miljøet med `npm run dev`
 
 ### Med `npm start`
