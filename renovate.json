@@ -1,12 +1,7 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "devDependencies": {
     "automerge": true
   },
-  "assignees": [
-    "maccyber",
-    "Sherex"
-  ]
+  "assignees": ["MatsAnd"]
 }
