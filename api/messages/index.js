@@ -93,6 +93,9 @@ module.exports = authMiddleware(async (req, res) => {
     const usedRoles = roles ? roles.split('|') : req.user.roles
     const usedLimit = limit + 1
     const data = await Message.find({
+      date_to: {
+        $gte: new Date()
+      },
       role: {
         $in: usedRoles
       },
