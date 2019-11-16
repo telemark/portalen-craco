@@ -7,5 +7,8 @@
     "mongoose": "5.7.11",
     "querystring": "0.2.0",
     "uuid": "3.3.3"
+  },
+  "scripts": {
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm i"
   }
 }
