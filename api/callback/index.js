@@ -1,7 +1,7 @@
 const { stringify } = require('querystring')
 const axios = require('axios')
 const { createToken } = require('../lib/jwt')
-const getUserRoles = require('../lib/getUserRoles')
+const { getRoles } = require('../lib/infoData')
 const { loadConfig } = require('../lib/authConfig')
 
 /*
@@ -66,7 +66,7 @@ module.exports = async (req, res) => {
     // const profile = await validateToken({ data: req.body, config })
     const token = await getToken({ code, config })
     const userProfile = await getUserInfo(token.access_token)
-    const roles = getUserRoles(userProfile.companyName)
+    const roles = await getRoles(userProfile.companyName)
     const user = {
       cn: userProfile.displayName,
       userId: userProfile.userPrincipalName,
