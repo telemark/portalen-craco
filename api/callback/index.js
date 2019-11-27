@@ -24,7 +24,7 @@ async function validateToken({ data, config }) {
 }
 */
 
-async function getToken({ code, config }) {
+async function getToken ({ code, config }) {
   const payload = {
     client_id: config.auth.client_id,
     code,
@@ -40,10 +40,10 @@ async function getToken({ code, config }) {
   return data
 }
 
-async function getUserInfo(token) {
-  axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
+async function getUserInfo (token) {
+  axios.defaults.headers.common.Authorization = `Bearer ${token}`
   const { data } = await axios(
-    'https://graph.microsoft.com/v1.0/me?$select=businessPhones,displayName,givenName,jobTitle,mail,mobilePhone,officeLocation,surname,userPrincipalName,department,birthday,companyName'
+    'https://graph.microsoft.com/v1.0/me?$select=businessPhones,displayName,givenName,jobTitle,mail,mobilePhone,officeLocation,surname,userPrincipalName,department,companyName'
   )
   return data
 }
