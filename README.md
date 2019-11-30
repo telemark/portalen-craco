@@ -56,13 +56,28 @@ Når en ny bruker kommer inn er løpet slik:
 
 Ved neste gangs besøk vil lagret token (fra localstorage) brukes og innhold lastes som etter login over.
 
+## Roller og innhold
+
+Innholdet brukeren får presentert avhenger av hvilke roller vedkommende har og om hen er utenfor eller innenfor det interne nettverket.
+
+Etter at personen er innlogget gjøres det kall til ulike mikrotjenester for å hente denne informasjonen.
+
 ## Deploy
 
-Kjør deploy scriptet
+Pass på at alle secrets fra [now.json](now.json) er tilgjengelig på instansen.
+
+Kjør deploy scriptet.
 
 ```
 $ npm run deploy
 ```
+
+## Relaterte moduler
+
+- [micro-portalen-roles](https://github.com/telemark/micro-portalen-roles) Mapper companyName til roller
+- [micro-portalen-shortcuts](https://github.com/telemark/micro-portalen-shortcuts) Gir shortcuts på bakgrunn av roller og plassering
+- [micro-portalen-links](https://github.com/telemark/micro-portalen-links) Gir lenker på bakrunn av roller og plassering
+- [micro-portalen-content](https://github.com/telemark/micro-portalen-content) Aggregerer nyheter og artikler på bakgrunn av roller
 
 ## Lisens
 
