@@ -62,6 +62,9 @@ Innholdet brukeren får presentert avhenger av hvilke roller vedkommende har og 
 
 Etter at personen er innlogget gjøres det kall til ulike mikrotjenester for å hente denne informasjonen.
 
+Først hentes roller. Dette er en kombinasjon av grupperroller som avgjøres av innholdet i `companyName`.
+Deretter hentes lenker, snarveger og nyheter/artikler på bakgrunn av rollene. Se `Releaterte tjenester`for mer informasjon.
+
 ## Deploy
 
 Pass på at alle secrets fra [now.json](now.json) er tilgjengelig på instansen.
@@ -72,7 +75,7 @@ Kjør deploy scriptet.
 $ npm run deploy
 ```
 
-## Relaterte moduler
+## Relaterte tjenester
 
 - [micro-portalen-roles](https://github.com/telemark/micro-portalen-roles) Mapper companyName til roller
 - [micro-portalen-shortcuts](https://github.com/telemark/micro-portalen-shortcuts) Gir shortcuts på bakgrunn av roller og plassering
