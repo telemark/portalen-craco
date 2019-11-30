@@ -35,6 +35,9 @@ REACT_APP_LIVEURL=http://localhost:3000
 
 Start dev-miljøet med `npm run dev`
 
+Først starter backendmiljøet opp på port 3000 og deretter kommer frontend opp på tilfeldig port.
+Alt vises i konsollen.
+
 ### Med `npm start`
 
 Man må først har gjort en deploy med `now` til en url, også bruker man [Proxy funksjonen i CRA](https://create-react-app.dev/docs/proxying-api-requests-in-development) for å sende alle /api requester til en kjørene instans hos now. Så legg inn url slik i din `.env` fil:
