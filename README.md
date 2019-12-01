@@ -84,6 +84,7 @@ $ npm run deploy
 - [micro-portalen-shortcuts](https://github.com/telemark/micro-portalen-shortcuts) Gir shortcuts på bakgrunn av roller og plassering
 - [micro-portalen-links](https://github.com/telemark/micro-portalen-links) Gir lenker på bakrunn av roller og plassering
 - [micro-portalen-content](https://github.com/telemark/micro-portalen-content) Aggregerer nyheter og artikler på bakgrunn av roller
+- [micro-portalen-tasks](https://github.com/telemark/micro-portalen-tasks) Henter oppgaver fra ulike interne systemer på bakgrunn av innlogget bruker
 
 ## Lisens
 
