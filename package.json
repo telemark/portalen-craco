@@ -20,7 +20,7 @@
     "@material-ui/pickers": "3.2.8",
     "core-js": "3.6.1",
     "date-fns": "2.8.1",
-    "dayjs": "1.8.18",
+    "dayjs": "1.8.19",
     "isomorphic-unfetch": "3.0.0",
     "object.omit": "3.0.0",
     "prop-types": "15.7.2",
