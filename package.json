@@ -67,6 +67,6 @@
     "not op_mini all"
   ],
   "engines": {
-    "node": ">=10.18.0"
+    "node": ">=12.14.1"
   }
 }
