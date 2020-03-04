@@ -6,7 +6,7 @@
     "jsonwebtoken": "8.5.1",
     "mongoose": "5.9.2",
     "querystring": "0.2.0",
-    "uuid": "7.0.1"
+    "uuid": "7.0.2"
   },
   "scripts": {
     "refresh": "rm -rf node_modules && rm package-lock.json && npm i"
