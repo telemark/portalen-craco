@@ -4,7 +4,7 @@
     "cookie": "0.4.1",
     "dayjs": "1.9.1",
     "jsonwebtoken": "8.5.1",
-    "mongoose": "5.10.9",
+    "mongoose": "5.10.12",
     "querystring": "0.2.0",
     "uuid": "8.3.1"
   },
