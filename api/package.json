@@ -2,7 +2,7 @@
   "dependencies": {
     "axios": "0.20.0",
     "cookie": "0.4.1",
-    "dayjs": "1.9.1",
+    "dayjs": "1.9.5",
     "jsonwebtoken": "8.5.1",
     "mongoose": "5.10.9",
     "querystring": "0.2.0",
